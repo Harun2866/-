@@ -1,21 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
-<title> Marquee Tag </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdun Nur | Graphic Designer & Photo Editor</title>
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<marquee behavior="slide" direction="right" bgcolor="Yellow">Birshreshtha Munshi Abdur Rouf Public College --> Stop, after scrolling only one time </marquee>
-<marquee behavior="scroll" direction="left">Birshreshtha Munshi Abdur Rouf Public College <-- Continue Scrolling </marquee>
-<marquee behavior="alternate" direction="left">Birshreshtha Munshi Abdur Rouf Public College <-- Both way scrolling --></marquee>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="banner">
+            <h1>Abdun Nur</h1>
+            <p class="tagline">Graphic Designer & Photo Editor</p>
+        </div>
+        <div class="profile-container">
+            <img src="IMG-20261018-WA0000.jpg" alt="Abdun Nur Profile Picture" class="profile-pic">
+            <span class="badge">PRO</span>
+        </div>
+        <h2 class="designer-name">Abdun Nur</h2>
+        
+        <ul class="info-list">
+            <li><i class="fa-solid fa-briefcase"></i> Available for Freelance & Fulltime</li>
+            <li><i class="fa-solid fa-wand-magic-sparkles"></i> Graphic & Photo Editing Expert</li>
+            <li><i class="fa-solid fa-location-dot"></i> Bangladesh</li>
+        </ul>
 
-<br><br>
+        <!-- Action & Social Buttons -->
+        <div class="action-buttons">
+            <a href="https://www.facebook.com/md.harun.816419" target="_blank" class="btn btn-primary"><i class="fa-brands fa-facebook"></i> Follow on Facebook</a>
+            <a href="https://instagram.com/" target="_blank" class="btn btn-instagram"><i class="fa-brands fa-instagram"></i> Follow on Instagram</a>
+            <a href="https://twitter.com/" target="_blank" class="btn btn-twitter"><i class="fa-brands fa-twitter"></i> Follow on Twitter</a>
+            <a href="mailto:your-email@gmail.com" class="btn btn-email"><i class="fa-solid fa-envelope"></i> Send Email</a>
+            <a href="tel:+8801763527841" class="btn btn-secondary"><i class="fa-solid fa-phone"></i> Call: +8801763527841</a>
+            <a href="https://wa.me/8801763527841" target="_blank" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> WhatsApp 24/7</a>
+        </div>
+    </header>
 
-<marquee behavior="scroll" direction="left" onmousedown="this.stop();" onmouseup="this.start();">Click Here and hold the mouse marquee stop</marquee>
+    <!-- Hire Box Section -->
+    <section class="hire-card">
+        <h3>Hire Abdun Nur</h3>
+        <div class="hire-option">
+            <span><i class="fa-solid fa-briefcase"></i> Freelance Job</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="hire-option">
+            <span><i class="fa-solid fa-pen-nib"></i> Full-Time / Contract Work</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </section>
 
-<br><br>
+    <!-- Tabs Navigation -->
+    <nav class="tab-nav">
+        <button class="tab-btn active" onclick="openTab('services')">Services</button>
+        <button class="tab-btn" onclick="openTab('projects')">Projects</button>
+    </nav>
 
-<marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">Hover over and hold the mouse marquee stop</marquee>
+    <!-- Services Section -->
+    <section id="services" class="tab-content active-content">
+        <h3 class="section-title">My Services</h3>
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-img-holder placeholder-1">
+                    <i class="fa-solid fa-image"></i>
+                </div>
+                <div class="card-body">
+                    <h4>Photo Editing & Retouching</h4>
+                    <p class="price">From US$ 10</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-holder placeholder-2">
+                    <i class="fa-solid fa-vector-square"></i>
+                </div>
+                <div class="card-body">
+                    <h4>Logo & Brand Identity</h4>
+                    <p class="price">From US$ 50</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="tab-content">
+        <h3 class="section-title">Featured Projects</h3>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-img placeholder-3">
+                    <span class="project-title">Brand Identity Showcase</span>
+                </div>
+                <div class="project-meta">
+                    <span>Graphic Design</span>
+                    <span><i class="fa-solid fa-thumbs-up"></i> 357 &nbsp; <i class="fa-solid fa-eye"></i> 6.6K</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img placeholder-4">
+                    <span class="project-title">Photo Retouching & Editing</span>
+                </div>
+                <div class="project-meta">
+                    <span>Photo Editing</span>
+                    <span><i class="fa-solid fa-thumbs-up"></i> 1.3K &nbsp; <i class="fa-solid fa-eye"></i> 17.5K</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Abdun Nur. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JS File Link -->
+    <script src="script.js"></script>
 </body>
-</html>
+  </html>
+  
